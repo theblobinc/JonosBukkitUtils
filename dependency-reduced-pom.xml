@@ -79,7 +79,7 @@
         <artifactId>maven-jar-plugin</artifactId>
         <version>2.3.1</version>
         <configuration>
-          <outputDirectory>D:\User\git\^^Libs\Minecraft Plugins</outputDirectory>
+          <outputDirectory>c:\Plugins</outputDirectory>
         </configuration>
       </plugin>
       <plugin>
@@ -127,7 +127,7 @@
     <dependency>
       <groupId>net.milkbowl.vault</groupId>
       <artifactId>VaultAPI</artifactId>
-      <version>1.6</version>
+      <version>1.7</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
@@ -139,7 +139,7 @@
     <dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot-api</artifactId>
-      <version>1.12-R0.1-SNAPSHOT</version>
+      <version>1.13.2-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
@@ -167,16 +167,24 @@
     <dependency>
       <groupId>com.sk89q.worldedit</groupId>
       <artifactId>worldedit-bukkit</artifactId>
-      <version>6.1.4-SNAPSHOT</version>
+      <version>7.0.0-SNAPSHOT</version>
       <scope>provided</scope>
       <exclusions>
+        <exclusion>
+          <artifactId>worldedit-core</artifactId>
+          <groupId>com.sk89q.worldedit</groupId>
+        </exclusion>
         <exclusion>
           <artifactId>dummypermscompat</artifactId>
           <groupId>com.sk89q</groupId>
         </exclusion>
         <exclusion>
-          <artifactId>worldedit-core</artifactId>
-          <groupId>com.sk89q.worldedit</groupId>
+          <artifactId>bstats-bukkit</artifactId>
+          <groupId>org.bstats</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>paperlib</artifactId>
+          <groupId>io.papermc</groupId>
         </exclusion>
         <exclusion>
           <artifactId>bukkit</artifactId>
